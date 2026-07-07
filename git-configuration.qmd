@@ -1,0 +1,23 @@
+---
+title: "Introduce yourself to Git"
+format:
+  html:
+    embed-resources: true
+---
+
+## Install R package
+
+1.  Install the `usethis` R package using the Console and command `install.packages("usethis")`.
+
+## Git configuration
+
+1.  Edit the code chunk below to replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository). Ensure to keep the quotation marks (e.g. "rainbow-train")
+
+2.  Render the document
+
+```{r}
+library(usethis)
+use_git_config(user.name = " ", user.email = " ")
+```
+
+3. Return to the website, you got some more work to do: <https://gitforsci-cis.github.io/website/0-1-pre-work/07-first-repo.html#step-5-commit-and-push-your-changes>
