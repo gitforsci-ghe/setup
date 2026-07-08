@@ -19,4 +19,4 @@ message("All workshop packages installed")
 # Next step ------------------------------------------------------------------
 
 # Return to the website; you have some more work to do:
-# https://gitforsci-ghe.github.io/website/pre-work/06-first-repo.html#step-7-open-an-issue-on-github
+# https://gitforsci-ghe.github.io/website/pre-work/06c-install-verify.html#step-2-open-an-issue-on-github

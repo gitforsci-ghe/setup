@@ -1,26 +1,9 @@
 # README
 
-This repository guides you through the initial setup and configuration of Git
-for R projects, using the `usethis` and `gitcreds` packages, and installs the
-R packages needed for the workshop. Work through the checklist:
+This is your personal setup repository for the "Git for Scientists" workshop.
+It contains three numbered R scripts that store your GitHub token, configure
+Git, and install the R packages needed for the workshop.
 
-- [ ] Open the project in RStudio by opening `setup.Rproj`
-- [ ] Open `01-github-token.R`, click "Source", and paste your personal
-      access token into the Console when asked; check that the report says
-      `<discovered>` for the token
-- [ ] Open `02-git-configuration.R` and replace the two placeholders in
-      Step 1 with your full name and the email address you use on GitHub
-- [ ] Click the "Source" button at the top right of the script window and
-      check the `usethis::git_sitrep()` output in the Console for your name
-      and email
-- [ ] Commit `02-git-configuration.R`, then push your changes to GitHub
-- [ ] Open `03-workshop-packages.R`, click "Source", and check that the
-      Console shows "All workshop packages installed"
-- [ ] Open an issue in this repository titled "Completed test setup tasks"
-      and tag @larnsce so the instructor can verify your setup
-      
-# Source button
-
-This image shows where the Source button is.
-
-<img width="766" height="109" alt="Screenshot 2026-07-08 at 14 04 12" src="https://github.com/user-attachments/assets/a669e83f-b47f-4b21-866f-f3729a4eaffc" />
+Work through the scripts in order by following the pre-course instructions on
+the workshop website:
+<https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html>
