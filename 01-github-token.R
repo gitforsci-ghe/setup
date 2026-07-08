@@ -12,12 +12,6 @@ install.packages("usethis")
 
 gitcreds::gitcreds_set()
 
-usethis::git_sitrep()
-
-# Check the report printed in the Console. Find this line:
-# - "Personal access token" says <discovered>
-# If it says <unset>, click Source again and paste the token.
-
 # Next step ------------------------------------------------------------------
 
 # Open 02-git-configuration.R in the Files window (bottom right) and follow
