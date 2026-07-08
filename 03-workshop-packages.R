@@ -10,14 +10,6 @@ install.packages(c("devtools", "ggplot2", "ggthemes",
 
 devtools::install_github("openwashdata/washinvestments")
 
-suppressPackageStartupMessages(
-  invisible(lapply(
-    c("washinvestments", "ggplot2", "ggthemes", "countrycode", "dplyr"),
-    library,
-    character.only = TRUE
-  ))
-)
-
 message("All workshop packages installed")
 
 # Check the Console. Find this line:
