@@ -18,3 +18,9 @@ R packages needed for the workshop. Work through the checklist:
       Console shows "All workshop packages installed"
 - [ ] Open an issue in this repository titled "Completed test setup tasks"
       and tag @larnsce so the instructor can verify your setup
+      
+# Source button
+
+This image shows where the Source button is.
+
+<img width="766" height="109" alt="Screenshot 2026-07-08 at 14 04 12" src="https://github.com/user-attachments/assets/a669e83f-b47f-4b21-866f-f3729a4eaffc" />
