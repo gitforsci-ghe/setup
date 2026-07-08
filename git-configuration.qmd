@@ -11,13 +11,40 @@ format:
 
 ## Git configuration
 
-1.  Edit the code chunk below to replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository). Ensure to keep the quotation marks (e.g. "rainbow-train")
+1.  Edit the code chunk below to replace the two placeholders with your own details. Ensure to keep the quotation marks.
 
-2.  Render the document
+    - `YOUR FULL NAME`: your human name, for example `"Ada Lovelace"`. This is not your GitHub username; Git uses this name to label your commits.
+    - `YOUR GITHUB EMAIL`: the email address you use for your GitHub account.
 
 ```{r}
-library(usethis)
-use_git_config(user.name = " ", user.email = " ")
+your_name <- "YOUR FULL NAME"
+your_email <- "YOUR GITHUB EMAIL"
 ```
 
-3. Return to the website, you got some more work to do: <https://gitforsci-cis.github.io/website/0-1-pre-work/07-first-repo.html#step-5-commit-and-push-your-changes>
+2.  Render the document. The next chunk checks your edits and then applies the configuration; you do not need to change it. If you have not replaced the placeholders yet, the render stops with a reminder instead of setting a broken Git identity.
+
+```{r}
+if (your_name == "YOUR FULL NAME" || your_email == "YOUR GITHUB EMAIL") {
+  stop(
+    "You have not added your details yet. Edit the chunk above: ",
+    "replace YOUR FULL NAME with your full name and YOUR GITHUB EMAIL ",
+    "with the email address you use on GitHub. Then render again.",
+    call. = FALSE
+  )
+}
+
+library(usethis)
+use_git_config(user.name = your_name, user.email = your_email)
+```
+
+## Verify your configuration
+
+3.  The chunk below prints a situation report of your Git setup. Good output shows your name and email in the "Git config" section and a discovered personal access token; if either is missing or wrong, repeat the step above and render again.
+
+```{r}
+usethis::git_sitrep()
+```
+
+## Next step
+
+4.  Return to the website, you have some more work to do: <https://gitforsci-ghe.github.io/website/pre-work/06-first-repo.html#step-5-commit-and-push-your-changes>
